@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>show details</title>
+        <style>
+         #app, body  {
+             position: absolute;
+             width: 100%;
+             height: 100%;
+         }
+
+         #app {
+             background-color: red;
+         }
+
+         .show-container {
+             height: 100%;
+             display: flex;
+             flex-direction: column;
+         }
+
+         .show-header {
+             flex: 1;
+             display: flex;
+             background-color: darkgrey;
+         }
+
+         .show-header-image {
+             flex: 1;
+             background-color: black;
+         }
+
+         .show-header-info {
+             flex: 4;
+         }
+
+         .show-info {
+             flex: 2;
+             display:flex;
+         }
+
+         .seasons {
+             flex: 1;
+             background-color: red
+         }
+
+         .episodes {
+             flex: 4;
+             display: flex;
+             background-color: green
+         }
+
+         .episodes-list {
+             flex: 1;
+             background-color: yellow;
+         }
+
+         .episode-info {
+             flex: 1;
+             background-color: blue;
+         }
+
+         .txt-white {
+             color: white;
+         }
+        </style>
+    </head>
+    <body>
+        <div id="app">
+            <div class="show-container">
+                <div class="show-header">
+                    <div class="show-header-image">
+                        <h1 class="txt-white">show header image</h1>
+                    </div>
+                    <div class="show-header-info">
+                        <h1>show header info</h1>
+                    </div>
+                </div>
+                <div class="show-info">
+                    <div class="seasons" style="display:non">
+                        <h1>seasons list</h1>
+                    </div>
+                    <div class="episodes">
+                        <div class="episodes-list">
+                            <h1>episodes list</h1>
+                        </div>
+                        <div class="episode-info">
+                            <h1>episode info</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
